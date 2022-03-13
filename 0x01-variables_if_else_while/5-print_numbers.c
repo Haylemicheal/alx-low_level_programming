@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 /**
- * main: main function
- * Description: Print out numbers from 0 to 10, then followed by newline
- * Return: 0
- */
+* main - This is the main function
+* Description: Print out numbers from 0 to 9
+* Return: the function returns 0
+*/
 int main(void)
-{	
-	int i = 0;
+{
+	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 9; i++)
+	{
 		printf("%d", i);
+	}
 	printf("\n");
 	return (0);
 }
