@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-/*
- * main - Print alphabet except q and e
- *
- * Return - 0
- */
-
+/**
+* main - This is the main function
+* Description: Prints out the alphabet except q and e in lowercase followed by a new line
+* Return: The function returns 0
+*/
 int main(void)
 {
-	char c = 'a';
+	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
@@ -16,7 +15,6 @@ int main(void)
 			continue;
 		putchar(c);
 	}
-
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
