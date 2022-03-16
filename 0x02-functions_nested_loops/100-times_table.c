@@ -25,6 +25,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				if (p >= 10 && p < 100)
 				{
+					_putchar(' ');
 					_putchar(p / 10 + 48);
 					_putchar(p % 10 + 48);
 				}
@@ -36,6 +37,7 @@ void print_times_table(int n)
 				}
 				else
 				{
+					_putchar(' ');
 					_putchar(' ');
 					_putchar(p + 48);
 				}
