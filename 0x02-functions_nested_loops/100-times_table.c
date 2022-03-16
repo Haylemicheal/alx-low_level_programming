@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - Prints n times table
+ * print_times_table - Prints n times table
  * @n: Number param
  * Return: The products
  */
@@ -33,7 +33,7 @@ void print_times_table(int n)
 				{
 					_putchar((p / 100) + 48);
 					_putchar(((p % 100) / 10) + 48);
-					_putchar((p % 10) + 48);					
+					_putchar(p % 10 + 48);
 				}
 				else
 				{
