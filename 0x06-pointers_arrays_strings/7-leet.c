@@ -8,28 +8,20 @@
 char *leet(char *n)
 {
 	int i;
+	int j;
+	char c1[] = {'a', 'e', 'o', 't', 'l'};
+	char c2[] = {'A', 'E', 'O', 'T', 'L'};
+	int val[] = {52, 51, 48, 55, 49};
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-		if (n[i] == 'a' || n[i] == 'A')
+		for (j = 0; j < 5; j++)
 		{
-			n[i] = 52;
-		}
-		else if (n[i] == 'e' || n[i] == 'E')
-		{
-			n[i] = 51;
-		}
-		else if (n[i] == 'o' || n[i] == 'O')
-		{
-			n[i] = 48;
-		}
-		else if (n[i] == 't' || n[i] == 'T')
-		{
-			n[i] = 55;
-		}
-		else if (n[i] == 'l' || n[i] == 'L')
-		{
-			n[i] = 49;
+			if (n[i] == c1[j] || n[i] == c2[j])
+			{
+				n[i] = val[j];
+				break;
+			}
 		}
 	}
 	return (n);
