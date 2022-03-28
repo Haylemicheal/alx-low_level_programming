@@ -4,7 +4,7 @@
  * _strspn - get length of a prefix substring
  * @s: String input
  * @accept: String input
- * Return: The number of bytes 
+ * Return: The number of bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
