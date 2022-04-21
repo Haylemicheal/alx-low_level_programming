@@ -11,7 +11,7 @@ void free_list(list_t *head)
 
 	while (head)
 	{
-		if(head->str)
+		if (head->str)
 			free(head->str);
 
 		place_holder = head;
