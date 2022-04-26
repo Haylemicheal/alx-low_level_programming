@@ -1,5 +1,5 @@
 #include "lists.h"
-#include "create_node.c"
+#include <stdlib.h>
 
 /**
  * add_nodeint - Adds node in the front
@@ -9,9 +9,18 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *node = create_node(n);
+	listint_t *new_node;
 
-	node->next = *head;
-	*head = node;
-	return (node);
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		new_node->n = n;
+		new_node->next = *head;
+		*head = new_node;
+	}
+	return (*head);
 }
