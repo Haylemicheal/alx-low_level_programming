@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * get_bit - Get bit at specified index
